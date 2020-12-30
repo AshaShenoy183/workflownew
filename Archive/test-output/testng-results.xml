@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-12-30T14:52:40 IST" name="Archive Test suite" finished-at="2020-12-30T14:52:48 IST" duration-ms="7825">
+    <groups>
+    </groups>
+    <test started-at="2020-12-30T14:52:40 IST" name="FormPage Test" finished-at="2020-12-30T14:52:48 IST" duration-ms="7825">
+      <class name="testcases.SearchPageTest">
+        <test-method is-config="true" signature="initilizeBrwoser(java.lang.String, java.lang.String)[pri:0, instance:testcases.SearchPageTest@77eca502]" started-at="2020-12-30T14:52:40 IST" name="initilizeBrwoser" finished-at="2020-12-30T14:52:47 IST" duration-ms="6450" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.bing.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizeBrwoser -->
+        <test-method signature="verifyPageTitle()[pri:0, instance:testcases.SearchPageTest@77eca502]" started-at="2020-12-30T14:52:47 IST" name="verifyPageTitle" finished-at="2020-12-30T14:52:47 IST" duration-ms="690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitle -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.SearchPageTest@77eca502]" started-at="2020-12-30T14:52:47 IST" name="closeBrowser" finished-at="2020-12-30T14:52:48 IST" duration-ms="652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.SearchPageTest -->
+    </test> <!-- FormPage Test -->
+  </suite> <!-- Archive Test suite -->
+</testng-results>

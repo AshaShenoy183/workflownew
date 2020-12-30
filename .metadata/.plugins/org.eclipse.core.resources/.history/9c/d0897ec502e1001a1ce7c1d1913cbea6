@@ -1,0 +1,11 @@
+package utill;
+
+public class WebDriverWait {
+	
+	
+	
+	public WebDriverWait(WebDriverWait driver) {
+		
+	}
+
+}

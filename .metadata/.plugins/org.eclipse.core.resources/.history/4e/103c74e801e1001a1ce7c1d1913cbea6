@@ -1,0 +1,34 @@
+package pageobject;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.FindBy;
+
+import main.MainDriverClass;
+
+public class FormPageObject extends MainDriverClass {
+
+	@FindBy(css = "div.inputGroupContainer input[name='first_name']")
+	WebDriver firtName;
+	
+	@FindBy(css = "div.inputGroupContainer input[name='first_name']")
+	WebDriver lastName;
+	
+	@FindBy(css = "div.inputGroupContainer input[name='first_name']")
+	WebDriver firtName;
+	
+	@FindBy(css = "div.inputGroupContainer input[name='first_name']")
+	WebDriver firtName;
+	
+	@FindBy(css = "div.inputGroupContainer input[name='first_name']")
+	WebDriver firtName;
+	
+	@FindBy(css = "div.inputGroupContainer input[name='first_name']")
+	WebDriver firtName;
+	
+	
+	
+	
+	
+	
+	
+}

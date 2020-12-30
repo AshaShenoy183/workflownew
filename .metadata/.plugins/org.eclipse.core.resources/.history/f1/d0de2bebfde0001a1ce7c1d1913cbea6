@@ -1,0 +1,21 @@
+package pageinitilizer;
+
+import org.openqa.selenium.support.PageFactory;
+
+import main.MainDriverClass;
+import pageobject.FormPageObject;
+
+public class PageInitilizer  extends MainDriverClass{
+
+	
+	
+	public FormPageObject formPage() {
+		
+		FormPageObject loginPage = PageFactory.initElements(driver, FormPageObject.class)
+	}
+	
+	
+	
+	
+	
+}

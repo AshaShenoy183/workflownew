@@ -1,0 +1,21 @@
+package utill;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+public class WebDriverWait {
+	WebDriver driver;
+	
+	
+	public WebDriverWait(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	public void waitTillTheItemIsVisible(WebElement element, int time) {
+		WebDriverWait wait = new WebDriverWait(driver, )
+
+		wait.until(ExpectedConditions.visibilityOfAllElements(element)));
+	}
+
+}

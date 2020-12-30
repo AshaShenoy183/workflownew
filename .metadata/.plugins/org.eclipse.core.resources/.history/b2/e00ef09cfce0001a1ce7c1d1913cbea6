@@ -1,0 +1,22 @@
+package main;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
+
+
+public class MainDriverClass {
+	
+	
+	
+	
+	
+	
+	@BeforeClass
+	@Parameters(value = {"url" , "remoteURL", "browserName"})
+	public void initilizeBrwoser() {
+		
+	}
+	
+	
+
+}

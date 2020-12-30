@@ -1,0 +1,23 @@
+package utill;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import main.MainClass;
+
+public class WaitingMethods extends MainClass {
+	RemoteWebDriver driver;
+
+	public WaitingMethods(RemoteWebDriver driver) {
+		this.driver = driver;
+	}
+	
+	public void waitTillTheElementIsVisible(WebElement element,int time ) {
+		new WebDriverWait(driver,time).until(ExpectedConditions
+				.visibilityOfAllElements(element));
+	}
+
+}

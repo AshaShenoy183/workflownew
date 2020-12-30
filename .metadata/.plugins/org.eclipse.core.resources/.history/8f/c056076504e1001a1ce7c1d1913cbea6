@@ -1,0 +1,48 @@
+package pageobject;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import main.MainDriverClass;
+
+public class FormPageObject extends MainDriverClass {
+
+	@FindBy(css = "div.inputGroupContainer input[name='first_name']")
+	WebElement firtNameLocator;
+	
+	@FindBy(css = "div.inputGroupContainer input[name='last_name']")
+	WebElement lastNameLocator;
+	
+	@FindBy(css = "div.radio input[value='yes']")
+	WebElement doYouHaveHostingYesLocator;
+	
+	@FindBy(css = "div.radio input[value='no']")
+	WebElement doYouHaveHostingNoLocator;
+	
+	@FindBy(css = "div.inputGroupContainer textarea[placeholder='Project Description']")
+	WebElement projectDesLocator;
+	
+	@FindBy(css = "div.inputGroupContainer i.glyphicon-pencil")
+	WebElement penciliconLocator;
+	
+	
+	public FormPageObject enterFirstName(String firstName) {
+		
+		firtNameLocator.clear();
+		firtNameLocator.sendKeys(firstName);
+		return this;
+	}
+	
+	public FormPageObject enterSecondName(String seConName) {
+		
+		firtNameLocator.clear();
+		firtNameLocator.sendKeys(firstName);
+		return this;
+	}
+	
+	
+	
+	
+	
+}

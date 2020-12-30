@@ -1,0 +1,15 @@
+package utill;
+
+import org.openqa.selenium.WebDriver;
+
+public class WebDriverWait {
+	WebDriver driver;
+	
+	
+	public WebDriverWait(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	
+
+}

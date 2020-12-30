@@ -1,0 +1,15 @@
+package testcases;
+
+import pageinitilizer.PageInitilizer;
+
+public class FormPageTest extends PageInitilizer {
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

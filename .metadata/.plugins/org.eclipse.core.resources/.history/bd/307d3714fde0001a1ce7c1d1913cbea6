@@ -1,0 +1,33 @@
+package main;
+
+import org.openqa.selenium.Platform;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
+
+
+public class MainDriverClass {
+	
+	
+	
+	
+	
+	
+	@BeforeClass
+	@Parameters(value = {"url" , "remoteURL", "browserName"})
+	public void initilizeBrwoser(String url, String remoteURL, String browserName ) {
+		
+		
+		DesiredCapabilities desCap = new DesiredCapabilities();
+		
+		desCap.merge(desCap);
+		desCap.setBrowserName(browserName);
+		desCap.setPlatform(Platform.ANY);
+		
+		WebDriver driver = new RemoteWebDriver(new URL("http://www.example.com"), desCap);
+	}
+	
+	
+
+}

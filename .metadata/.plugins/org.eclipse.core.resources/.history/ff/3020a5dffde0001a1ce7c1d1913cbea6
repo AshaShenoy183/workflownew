@@ -1,0 +1,17 @@
+package pageinitilizer;
+
+import main.MainDriverClass;
+
+public class PageInitilizer  extends MainDriverClass{
+
+	
+	
+	public FormPageObject formPage() {
+		
+	}
+	
+	
+	
+	
+	
+}

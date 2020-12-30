@@ -1,0 +1,64 @@
+package main;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import org.openqa.selenium.Platform;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
+
+
+public class MainDriverClass {
+	
+	
+	
+ RemoteWebDriver driver;
+	
+	
+	@BeforeClass
+	@Parameters(value = {"url" , "remoteURL", "browserName"})
+	public void initilizeBrwoser(String url, String remoteURL, String browserName ) {
+		
+		
+		DesiredCapabilities desCap = new DesiredCapabilities();
+		
+		desCap.merge(desCap);
+		desCap.setBrowserName(browserName);
+		desCap.setPlatform(Platform.ANY);
+		
+		try {
+			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), desCap);
+		} catch (MalformedURLException e) {
+			
+			e.printStackTrace();
+		}
+		
+		driver.get(url);
+	}
+	
+	public WebDriver getDriver() {
+		return driver;
+	}
+
+
+
+	public void setDriver(WebDriver driver) {
+		this.driver = (RemoteWebDriver) driver;
+	}
+	
+	@AfterClass
+	public void closeBrowser() {
+		getDriver().quit();
+	}
+
+
+
+	
+	
+	
+
+}
